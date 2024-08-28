@@ -12,14 +12,14 @@ function Footer() {
     <div>
       <footer className="container max-w-full mt-20">
         <div className="foot"></div>
-        <div className="bg-fadedBlue text-white flex flex-row items-center pl-20 space-x-12 ">
+        <div className="bg-slate-300 flex  items-center pl-20 space-x-12 ">
           <img
             src={Logo}
             alt="TransportFlow Logistics Logo"
-            className="bg-bgButton p-3"
+            className="bg-slate-600 p-3"
           />
         </div>
-        <div className="flex flex-row bg-bgButton text-white pl-0 md:pl-20 w-auto">
+        <div className="flex flex-row bg-slate-600 text-white pl-0 md:pl-20 w-auto">
           <div className="flex flex-col space-y-7 p-7  pl-20 md:pl-5">
             <div className="w-52">
               <p>

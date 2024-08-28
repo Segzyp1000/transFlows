@@ -32,7 +32,7 @@ function Navbar() {
         <div className=" flex items-center justify-between md:mx-14 mx-auto">
           {/* <!-- logo --> */}
           <div className="pt-2">
-            <img src={Logo} alt="Logo" />
+            <img src={Logo} alt="Logo" className="logo" />
           </div>
           {/* <!-- desktop menu --> */}
           <div className=" hidden lg:flex space-x-5 items-center text-lightWhite">

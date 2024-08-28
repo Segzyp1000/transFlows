@@ -12,6 +12,7 @@
     background: url('../src/assets/background2.png') center center /cover no-repeat;
     height: 300px;
     position:relative    
+    
 }
 
 .navb {
@@ -104,9 +105,9 @@
 
 
 
-@media (max-width: 320px) {
-    .headd{
-        display: none;
+@media (max-width: 365px) {
+    .logo{
+        width: 100px;
     }
 }
 
