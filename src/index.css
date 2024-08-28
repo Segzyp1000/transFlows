@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.wrappers {
+    background: url('../src/assets/Background.png') center center / cover no-repeat;
+} 
+
+.wrapper {
+    background: url('../src/assets/background2.png') center center /cover no-repeat;
+    height: 300px;
+    position:relative    
+}
+
+.navb {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+   
+  } 
+
+.wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* relative width */
+    max-width: 700px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    z-index: 1;
+    
+  }
+
+  
+  
+
+.wrap img {
+   max-width: 300px;
+    height: auto;
+}
+
+
+.foot {
+    background: url('./assets/footer.png') center center / cover no-repeat;
+    height: 200px;
+
+    
+}
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    transform:  rotate(0);
+    transition: all 0.5s;
+
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+
+
+
+
+@media (max-width: 320px) {
+    .headd{
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .wrap{
+        width: 70%;        
+    }
+
+}
+
+  
+    @media (min-width: 1024px) {
+        #menu-btn {
+          display: none;
+        }
+      }
+      
+
+    
+    
