@@ -12,10 +12,10 @@ function Why() {
     <div>
       <div className="container flex flex-row max-w-full mt-20" id="projects">
         <div className="lg:flex hidden bg-bgButton w-1/2">
-          <img src={Planes} alt="" className="h-[310px]  w-[529px] mt-10" />
+          <img src={Planes} alt="" className="h-[210px]  w-[329px] mt-20" />
         </div>
         <div className="bg-lightWhite lg:w-1/2 max-w-full p-3">
-          <div className="flex flex-col space-x-3 space-y-3">
+          <div className="flex flex-col p-4 space-x-3 space-y-3">
             <p>Why Choose us</p>
             <h2 className="font-bold">
               We Create Opportunity to Reach Potential

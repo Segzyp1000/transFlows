@@ -6,9 +6,9 @@ import Call from "../assets/logo-call.png";
 function Contact() {
   return (
     <div>
-      <div className="flex flex-col" id="contacts">
-        <div className="flex flex-col md:flex-row h-auto bg-bgButton text-white mt-20  p-6">
-          <div className="flex flex-col space-y-6 mx-7 w-72">
+      <div className=" bg-bgButton text-white mt-20" id="contacts">
+        <div className="flex justify-between items-center flex-col md:flex-row  mx-auto md:mx-20">
+          <div className="flex flex-col space-y-6 mx-7 w-72 my-8">
             <p>Contacts</p>
             <h1 className="font-bold text-2xl">Get In Touch With Us</h1>
             <div className="flex space-x-1 items-center">
@@ -34,7 +34,7 @@ function Contact() {
             </div>
           </div>
 
-          <div className="max-w-xl mx-auto py-12 md:max-w-4xl">
+          <div className="max-w-xl mx-5 py-12 md:max-w-4xl">
             <div className="mt-8 max-w-md">
               <div className="grid grid-cols-2 gap-6">
                 <label className="block">
@@ -53,7 +53,7 @@ function Contact() {
                 </label>
                 <label className="block">
                   <input
-                    type="number"
+                    type="phone number"
                     className="mt-1 block w-full bg-transparent  border-2 border-slate-500 text-white p-3"
                     placeholder="Phone Number*"
                   />
@@ -67,8 +67,9 @@ function Contact() {
                 </label>
               </div>
               <div className="max-w-full  block mt-5">
-                <label>
+                <label className="block">
                   <textarea
+                    type="text"
                     className="mt-1 block w-full  bg-transparent  border-2 border-slate-500 text-white  p-3"
                     placeholder="Your Message"
                     rows="3"

@@ -4,7 +4,7 @@ import Pattern from "../assets/Pattern.png";
 function Count() {
   return (
     <div>
-      <div className="flex flex-wrap items-center text-center justify-center space-y-12 md:space-y-2 space-x-5 mt-80  lg:mt-64 max-w-full">
+      <div className="flex flex-wrap items-center text-center justify-center space-y-12 md:space-y-2 space-x-5 mt-72  lg:mt-56 max-w-full">
         <div className="flex space-x-3">
           <h1 className="max-w-md md:text-5xl text-xl font-bold">1296</h1>
           <div className="flex space-x-3">

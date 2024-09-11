@@ -26,9 +26,20 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const nav = document.querySelector("nav");
+  const header = document.querySelector("header");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > nav.offsetHeight) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  });
+
   return (
-    <div className="navb">
-      <nav className="bg-darkBlue p-6 ">
+    <div className="relative">
+      <nav className="bg-darkBlue p-6">
         <div className=" flex items-center justify-between md:mx-14 mx-auto">
           {/* <!-- logo --> */}
           <div className="pt-2">
@@ -79,22 +90,28 @@ function Navbar() {
           id="menu"
           className={`${
             isOpen ? "flex" : "hidden"
-          } ggg absolute flex-col items-center self-end py-8 mt-20 lg:mt-32 lg:space-y-12 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md`}
+          } ggg absolute flex-col items-center self-end py-8 mt-20 lg:mt-32 space-y-12 font-bold bg-white w-full sm:self-center left-0 right-6 drop-shadow-md`}
         >
           {/* <!-- contact info --> */}
           <div className="flex space-x-1 items-center">
             <img src={Call} alt="Phone Icon" />
-            <p>Call us: +01(222451)</p>
-          </div>
-          <div className="flex space-x-1 items-center">
-            <img src={Icon} alt="Clock Icon" />
-            <p>9.00 -18.00 Sunday Closed</p>
+            <div className="flex flex-col">
+              <p>Call us:</p>
+              <p>+01(222451)</p>
+            </div>
           </div>
           <div className="flex space-x-1 items-center">
             <img src={Email} alt="Email Icon" />
             <div className="flex flex-col">
               <p>Email:</p>
               <p>contact@Logistics.com</p>
+            </div>
+          </div>
+          <div className="flex space-x-1 items-center">
+            <img src={Icon} alt="Clock Icon" />
+            <div className="flex flex-col">
+              <p>9.00 -18.00</p>
+              <p>Sunday Closed</p>
             </div>
           </div>
           {/* <!-- social media --> */}
@@ -114,16 +131,16 @@ function Navbar() {
           </div>
         </div>
       </nav>
-      <header className="mx-auto max-w-full bg-fadedBlue p-6">
-        <div className="flex items-center space-x-48 gap-44 sm:mx-0 md:mx-12">
-          <div className=" flex space-x-5 text-lightWhite">
+      <header className="mx-auto max-w-full bg-fadedBlue sticky">
+        <div className="flex items-center justify-between sm:mx-0 md:mx-20">
+          <div className="flex space-x-5 md:p-0 p-5 text-lightWhite">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#pages">Pages</a>
             <a href="#projects">Projects</a>
             <a href="#contacts">Contacts</a>
           </div>
-          <div className="hidden lg:flex space-x-5 text-lightWhite">
+          <div className="hidden lg:flex space-x-5  pb-3 mt-3 text-lightWhite">
             <a href="https://www.facebook.com">
               <FaFacebook />
             </a>
@@ -136,12 +153,11 @@ function Navbar() {
             <a href="https://www.linkedin.com">
               <FaLinkedin />
             </a>
-            <a
-              href="#"
-              className="lg:flex mr-24  text-white font-bold hover:bg-slate-400 bg-yellow-500 rounded-full px-2"
-            >
+          </div>
+          <div>
+            <p className="lg:flex hidden mr-24  text-black font-bold  bg-white p-4 ">
               Request Quote
-            </a>
+            </p>
           </div>
         </div>
       </header>

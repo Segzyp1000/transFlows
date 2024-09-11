@@ -9,7 +9,7 @@ import Date3 from "../assets/Date3.png";
 function News() {
   return (
     <div
-      className="flex flex-col flex-wrap overflow-auto justify-center items-center mx-auto text-center mt-20 space-y-5 md:space-y-2"
+      className="flex flex-col flex-wrap overflow-auto justify-center items-center md:mx-20 mx-auto text-center mt-20 space-y-5 md:space-y-2"
       id="pages"
     >
       <div className="text-center space-y-5 md:space-y-2">
