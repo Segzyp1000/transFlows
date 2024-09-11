@@ -8,7 +8,7 @@ function Showcase() {
         id="home"
       >
         <div className="flex flex-col mb-32 mt-20 xsm:mx-0 sm:mx-0 md:mx-12 space-y-12 md:w-1/2 ">
-          <p className="max-w-sm text-center mx-10 md:mx-20 bg-whitishBackground text-whiteishGray">
+          <p className="max-w-sm text-center mx-12 md:mx-0 bg-whitishBackground text-whiteishGray">
             Logistics & Supply Chain Solutions
           </p>
           <h1 className="max-w-md text-xl font-bold text-center md:text-5xl text-white">

@@ -2,7 +2,6 @@ import Navbar from "./component/Navbar";
 import Showcase from "./component/Showcase";
 import Service from "./component/Service";
 import Delivery from "./component/Delivery";
-import Count from "./component/Count";
 import Transportation from "./component/Transportation";
 import Testimonial from "./component/Testimonial";
 import Why from "./component/Why";
@@ -18,7 +17,6 @@ export default function App() {
       <Showcase />
       <Service />
       <Delivery />
-      <Count />
       <Transportation />
       <Testimonial />
       <Why />

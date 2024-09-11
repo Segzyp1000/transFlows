@@ -26,20 +26,26 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
-  const nav = document.querySelector("nav");
-  const header = document.querySelector("header");
+  const nav = document.getElementById("nav");
+  const header = document.getElementById("header");
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > nav.offsetHeight) {
+    if (
+      window.scrollY > nav.offsetHeight &&
+      !header.classList.contains("sticky")
+    ) {
       header.classList.add("sticky");
-    } else {
+    } else if (
+      window.scrollY <= nav.offsetHeight &&
+      header.classList.contains("sticky")
+    ) {
       header.classList.remove("sticky");
     }
   });
 
   return (
     <div>
-      <nav className="relative bg-darkBlue p-6">
+      <nav className="w-full bg-darkBlue p-6" id="nav">
         <div className=" flex items-center justify-between md:mx-14 mx-auto">
           {/* <!-- logo --> */}
           <div className="pt-2">
@@ -75,13 +81,12 @@ function Navbar() {
               id="menu-btn"
               className="hamburger focus:outline-none"
               onClick={toggleMenu}
-              style={{
-                display: windowWidth >= 1024 ? "none" : "block",
-              }}
+              style={{ display: windowWidth >= 1024 ? "none" : "block" }}
             >
               <span className="hamburger-top"></span>
               <span className="hamburger-middle"></span>
               <span className="hamburger-bottom"></span>
+              <span className="cancel-icon">X</span> {/* Add this */}
             </button>
           </div>
         </div>
@@ -90,7 +95,7 @@ function Navbar() {
           id="menu"
           className={`${
             isOpen ? "flex" : "hidden"
-          } ggg absolute flex-col items-center self-end py-8 mt-20 lg:mt-32 space-y-12 font-bold bg-white w-full sm:self-center left-0 right-6 drop-shadow-md`}
+          } absolute flex-col mx-auto flex-start items-center h-[532px] mt-20 p-12 lg:mt-32 space-y-12 font-bold bg-white sm:self-center left-0 right-2 drop-shadow-md `}
         >
           {/* <!-- contact info --> */}
           <div className="flex space-x-1 items-center">
@@ -100,13 +105,7 @@ function Navbar() {
               <p>+01(222451)</p>
             </div>
           </div>
-          <div className="flex space-x-1 items-center">
-            <img src={Email} alt="Email Icon" />
-            <div className="flex flex-col">
-              <p>Email:</p>
-              <p>contact@Logistics.com</p>
-            </div>
-          </div>
+
           <div className="flex space-x-1 items-center">
             <img src={Icon} alt="Clock Icon" />
             <div className="flex flex-col">
@@ -115,7 +114,7 @@ function Navbar() {
             </div>
           </div>
           {/* <!-- social media --> */}
-          <div className="space-x-5 flex">
+          <div className="space-y-5 py-5 flex flex-col">
             <a href="https://www.facebook.com">
               <FaFacebook />
             </a>
@@ -131,7 +130,7 @@ function Navbar() {
           </div>
         </div>
       </nav>
-      <header className="mx-auto max-w-full bg-fadedBlue sticky">
+      <header className="mx-auto max-w-full bg-fadedBlue sticky" id="header">
         <div className="flex items-center justify-between sm:mx-0 md:mx-20">
           <div className="flex space-x-5 md:p-0 p-5 text-lightWhite">
             <a href="#home">Home</a>
@@ -155,7 +154,7 @@ function Navbar() {
             </a>
           </div>
           <div>
-            <p className="lg:flex hidden mr-24  text-black font-bold  bg-white p-4 ">
+            <p className="md:flex hidden   text-black font-bold  bg-white p-4 ">
               Request Quote
             </p>
           </div>

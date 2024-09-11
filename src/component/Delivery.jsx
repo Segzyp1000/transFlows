@@ -2,6 +2,7 @@ import React from "react";
 import About1 from "../assets/Icon 4about.png";
 import About2 from "../assets/Icon4abt.png";
 import About3 from "../assets/About.png";
+import Count from "./Count";
 
 function Delivery() {
   return (
@@ -36,6 +37,7 @@ function Delivery() {
           </div>
         </div>
       </div>
+      <Count/>
     </main>
   );
 }

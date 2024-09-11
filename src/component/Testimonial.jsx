@@ -6,12 +6,12 @@ import Testimonial2 from "../assets/testimonial2.png";
 
 function Testimonial() {
   return (
-    <div className="container flex flex-col mt-[490px] md:mt-20">
+    <div className="container flex flex-col mt-52 lg:mt-36">
       <div className="text-center flex flex-col justify-center mx-0 md:mx-20 items-center md:text-left mb-4 md:mb-0">
         <p className="text-lg">Testimonials</p>
         <h3 className="font-bold md:text-xl text-sm">What Our Customers Say</h3>
       </div>
-      <div className="hidden md:flex justify-between mx-28 p-2">
+      <div className="hidden lg:flex justify-between mx-28 p-2">
         <img src={Arrow1} alt="" />
         <img src={Arrow2} alt="" />
       </div>

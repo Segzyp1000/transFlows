@@ -10,7 +10,7 @@ import { FaLinkedin } from "react-icons/fa";
 function Footer() {
   return (
     <div>
-      <footer className="container max-w-full mt-20">
+      <footer className="block w-full mt-20">
         <div className="foot"></div>
         <div className="bg-slate-300 flex  items-center pl-20 space-x-12 ">
           <img
@@ -19,23 +19,24 @@ function Footer() {
             className="bg-slate-600 p-3"
           />
         </div>
-        <div className="flex flex-row bg-slate-600 text-white pl-0 md:pl-20 w-auto">
+        <div className="flex bg-slate-600 text-white pl-0 md:pl-20 w-auto">
           <div className="flex flex-col space-y-7 p-7  pl-20 md:pl-5">
-            <div className="w-52">
+            <div className="lg:w-52 w-full font-mono text-gray-400">
               <p>
                 Leverage agile frameworks to provide a robust synopsis for
                 strategy collaborative thinking to further the overall value
                 proposition.
               </p>
             </div>
-            <div className="flex space-x-2 items-center">
+
+            <div className="flex space-x-1">
               <img src={Call} alt="Email Icon" />
               <div className="flex flex-col">
                 <p>Email:</p>
                 <p>contact@Logistics.com</p>
               </div>
             </div>
-            <div className="flex space-x-1 items-center">
+            <div className="flex space-x-1">
               <img src={Email} alt="Phone Icon" />
               <div className="flex flex-col">
                 <p>Call us:</p>
@@ -43,64 +44,42 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="hidden flex-row md:flex">
-            <div className="pl-10 pt-7">
-              <a href="#" className="font-bold space-y-7">
-                Pages
-              </a>
+          <div className="justify-center hidden lg:flex w-full space-x-20">
+            <div className="pt-7">
+              <h1 className="font-semibold space-y-7 text-1xl">PAGES</h1>
               <ul>
-                <li>
-                  <a href="#">About</a>
-                </li>
-                <li>
-                  <a href="#">Study Guide</a>
-                </li>
-                <li>
-                  <a href="#">OUR Team</a>
-                </li>
-                <li>
-                  <a href="#">Chargelog</a>
-                </li>
-                <li>
-                  <a href="#">Our Projects</a>
-                </li>
+                <li className="font-mono text-gray-400">About</li>
+                <li className="font-mono text-gray-400">Study Guide</li>
+                <li className="font-mono text-gray-400">OUR Team</li>
+                <li className="font-mono text-gray-400">Chargelog</li>
+                <li className="font-mono text-gray-400">Our Projects</li>
               </ul>
             </div>
 
-            <div className="pl-10 pt-7">
-              <a href="#" className="font-bold space-y-7">
-                Utility
-              </a>
+            <div className="pt-7">
+              <h1 className="font-semibold space-y-7 text-1xl">UTILITY</h1>
               <ul>
-                <li>
-                  <a href="#">Lincenses</a>
-                </li>
-                <li>
-                  <a href="#">Pricing</a>
-                </li>
-                <li>
-                  <a href="#">Protected</a>
-                </li>
-                <li>
-                  <a href="#">Contacts</a>
-                </li>
-                <li>
-                  <a href="#">Not Found</a>
-                </li>
+                <li className="font-mono text-gray-400">Lincenses</li>
+                <li className="font-mono text-gray-400">Pricing</li>
+                <li className="font-mono text-gray-400">Protected</li>
+                <li className="font-mono text-gray-400">Contacts</li>
+                <li className="font-mono text-gray-400">Not Found</li>
               </ul>
             </div>
 
-            <div className="flex flex-col pl-10 pt-7">
-              <div className="font-bold">
-                <a href="#">Subscribe</a>
+            <div className="flex flex-col  pt-7 space-y-3 mb-10">
+              <div className="font-semibold  text-1xl">
+                <h1>SUBSCRIBE</h1>
               </div>
               <div className="pt-2">
-                <input type="text" placeholder="Email here" />`{" "}
+                <input type="text" placeholder="Email here" />
               </div>
               <div className="pt-2">
-                <button className="bg-lightYellow text-black">Send Now</button>
+                <button className="bg-lightYellow text-black font-semibold w-full">
+                  Send Now
+                </button>
               </div>
-              <div className="pt-2 flex space-x-2">
+              <div className="pt-2 flex space-x-5">
                 <a href="https://www.facebook.com">
                   <FaFacebook />
                 </a>
