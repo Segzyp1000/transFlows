@@ -38,8 +38,8 @@ function Navbar() {
   });
 
   return (
-    <div className="relative">
-      <nav className="bg-darkBlue p-6">
+    <div>
+      <nav className="relative bg-darkBlue p-6">
         <div className=" flex items-center justify-between md:mx-14 mx-auto">
           {/* <!-- logo --> */}
           <div className="pt-2">
