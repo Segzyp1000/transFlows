@@ -11,7 +11,7 @@ function Testimonial() {
         <p className="text-lg">Testimonials</p>
         <h3 className="font-bold md:text-xl text-sm">What Our Customers Say</h3>
       </div>
-      <div className="hidden lg:flex justify-between mx-28 p-2">
+      <div className="hidden lg:flex justify-between mx-36 p-2">
         <img src={Arrow1} alt="" />
         <img src={Arrow2} alt="" />
       </div>
